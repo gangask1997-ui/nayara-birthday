@@ -126,6 +126,19 @@ body {
   animation:glowPulse 4s ease-in-out infinite;
 }
 
+.name-highlight {
+  font-family:Georgia,'Times New Roman',serif; font-style:normal; font-weight:bold;
+  font-size:clamp(3.4rem,11vw,6.2rem);
+  letter-spacing:-0.01em;
+  background:linear-gradient(140deg,#fff 0%,var(--ice) 30%,var(--lilac-pale) 55%,var(--ice) 80%,#fff 100%);
+  background-size:250% 250%;
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 40px rgba(78,201,232,0.45));
+  animation:auroraShift 6s ease-in-out infinite, glowPulse 4s ease-in-out infinite;
+  display:inline-block;
+}
+
 .hero-sub {
   font-family:Georgia,serif; font-style:italic;
   color:var(--lilac-pale); font-size:1.05rem;
@@ -320,7 +333,7 @@ footer p { font-size:0.65rem; letter-spacing:0.22em; text-transform:uppercase; c
 
   <p class="hero-eye">✦ A magical invitation ✦</p>
 
-  <p class="hero-tag">Join us to celebrate as our little<br>Nayara turns <span class="age-num">2</span></p>
+  <p class="hero-tag">Join us to celebrate as our little<br><span class="name-highlight">Nayara</span> turns <span class="age-num">2</span></p>
 
   <button class="snow-btn" id="snowBtn" onclick="triggerMagic()">❄ Let It Snow ❄</button>
 </section>
